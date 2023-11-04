@@ -36,7 +36,7 @@ p{
 </div>
 <div align="center" >
         <table border="1" cellpadding="5">
-            <caption><h2>List of Batches</h2></caption>
+            <caption><h2>List of User Batches</h2></caption>
             <tr>
                 <th>Batch ID</th>
                 <th>Batch Name</th>
@@ -67,10 +67,8 @@ if(session.getAttribute("pId")!= null &&
 }
 %>  
 
-
 <c:forEach items="${requestScope.batch}" var="b">
 <tr>
-
 <td><c:out value="${b.b_id}"></c:out></td>
 <td><c:out value="${b.b_name}"></c:out></td>
 <td><c:out value="${b.b_instructor}"></c:out></td>

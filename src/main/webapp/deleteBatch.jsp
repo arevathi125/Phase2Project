@@ -8,13 +8,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Delete Batch Page</title>
 </head>
 <body>
 <jsp:useBean id="batch" class="com.caltech.pojo.Batch" />
 <%
 BatchDAO dao = new BatchDAO();
-//dao.edit(batch);
 batch.setB_id(Integer.parseInt(request.getParameter("id")));
 int count = dao.delete(batch);
 if(count>0){

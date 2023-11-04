@@ -25,14 +25,4 @@ if(dao.insert(participant) > 0){
 %> 
 </body>
 </html>  
-<%--
-<c:set var="dao" value="<%=new ParticipantDAO()%>"> </c:set>
-<c:set var="participant" value="<%=new Participant()%>"> </c:set>
-<c:set var="participant.id" value="${param.id}"/>
-<c:set var="participant.name" value="${param.name}"/>
-<c:set var="participant.password" value="${param.password}"/>
-<c:set var="participant.phone" value="${param.phone}"/>
-<c:set var="participant.email" value="${param.email}"/>
-<c:if test="${dao.insert(participant) > 0}">
-<c:redirect url = "success.jsp"/>
-</c:if> --%>
+

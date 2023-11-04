@@ -14,7 +14,6 @@
 <jsp:useBean id="batch" class="com.caltech.pojo.Batch" />
 <%
 BatchDAO dao = new BatchDAO();
-//dao.edit(batch);
 %>
 
  <c:set target="${batch}" property="b_id" value="${param.id}"/>
